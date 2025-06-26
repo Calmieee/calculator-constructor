@@ -1,12 +1,14 @@
+import CalculatorBuilder from "./pages/CalculatorBuilder.tsx";
+import {DndContext} from "@dnd-kit/core";
 
-function App() {
+const App = () => {
+	return (
+		<>
+      <DndContext>
+        <CalculatorBuilder />
+      </DndContext>
+		</>
+	);
+};
 
-
-  return (
-    <div className=''>
-
-    </div>
-  )
-}
-
-export default App
+export default App;
